@@ -1,0 +1,12 @@
+{
+  "name": "libcurl",
+  "version": "1.0.0",
+  "dependencies": [
+    "zlib",
+    "brotli",
+    "zstd",
+    "nghttp2",
+    "libidn2",
+    "libpsl"
+  ]
+}

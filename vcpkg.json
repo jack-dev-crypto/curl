@@ -7,6 +7,7 @@
     "zstd",
     "nghttp2",
     "libidn2",
+    "libssh2",
     "libpsl"
   ]
 }

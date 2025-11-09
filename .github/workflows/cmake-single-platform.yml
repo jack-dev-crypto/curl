@@ -22,6 +22,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+      submodules: recursive
 
     - name: Setup MSBuild + Developer Command Prompt
       uses: microsoft/setup-msbuild@v2
@@ -35,6 +36,11 @@ jobs:
     #     cd vcpkg
     #     bootstrap-vcpkg.bat
     #     cd ..
+
+    - name: Show directory
+      shell: cmd
+      run: |
+        dir vcpkg
 
     - name: Install Dependencies via vcpkg (using lukka/run-vcpkg@v11)
       uses: lukka/run-vcpkg@v11
